@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/inicio" >
+
+    <Button
+        android:id="@+id/btn_entrada"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/entrada"
+        android:background="@color/verde"/>
+
+    <Button
+        android:id="@+id/btn_saida_Almoco"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_toRightOf="@+id/btn_entrada"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/saida_almoco"
+        android:background="@color/amarelo"/>
+
+    <Button
+        android:id="@+id/btn_ret_almoco"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btn_entrada"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="@string/retorno_almoco"
+        android:background="@color/azul"
+        />
+
+    <Button
+        android:id="@+id/btn_saida"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/btn_saida_Almoco"
+        android:layout_toRightOf="@+id/btn_ret_almoco"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/saida"
+        android:background="@color/vermelho"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/marcacoes"
+        android:id="@+id/txtMarcacoes"
+        android:layout_below="@+id/btn_ret_almoco"
+        android:layout_centerHorizontal="true" />
+    <ListView
+
+        android:id="@+id/lst_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:dividerHeight="2sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMarcacoes">
+
+    </ListView>
+
+</RelativeLayout><!-- From: file:/E:/Meus%20Projetos/Projetos%20Android/MeuPonto/meuponto/app/src/main/res/layout/inicio.xml -->

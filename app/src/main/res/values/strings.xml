@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Meu Ponto</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Meu Ponto</string>
+    <string name="entrada">Entrada</string>
+    <string name="saida">Saída</string>
+    <string name="saida_almoco">Almoço</string>
+    <string name="retorno_almoco">Retorno</string>
+    <string name="marcacoes">Ultimas marcações</string>
+    <string name="salvarAlteracao">Salvar Alteração</string>
+</resources>

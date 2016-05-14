@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgBarra"
+        android:layout_width="5dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/txtdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHoraEntrada"
+        android:layout_toRightOf="@+id/imgBarra"
+        android:layout_marginLeft="16dp"
+        android:text="Data:"
+        android:textSize="15sp"
+        android:textColor="@color/cinza"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/txtid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHoraEntrada"
+        android:layout_toRightOf="@+id/txtdata"
+        android:layout_marginLeft="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/cinza"
+        android:visibility="invisible"
+        android:paddingLeft="5dp"
+        />
+
+        <TextView
+           android:id="@+id/txtEntrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBarra"
+            android:layout_alignTop="@+id/imgBarra"
+            android:layout_marginLeft="15dp"
+            android:text="@string/entrada"
+            android:textSize="20sp"
+            android:textColor="@color/cinza"
+            android:paddingLeft="5dp"
+            />
+
+    <TextView
+        android:id="@+id/txtHoraEntrada"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEntrada"
+        android:layout_toRightOf="@+id/imgBarra"
+        android:layout_marginLeft="15dp"
+        android:textColor="#333333"
+        android:paddingLeft="5dp"
+        android:layout_gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/txtAlmoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtEntrada"
+        android:layout_alignTop="@+id/txtEntrada"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/cinza"
+        android:text="@string/saida_almoco"
+        />
+
+    <TextView
+        android:id="@+id/txtHoraAlmoco"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlmoco"
+        android:layout_toRightOf="@+id/txtHoraEntrada"
+        android:textColor="#333333"
+        android:layout_gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/txtVoltaAlmoco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtAlmoco"
+        android:layout_alignTop="@+id/txtAlmoco"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/cinza"
+        android:text="@string/retorno_almoco"
+        />
+    <TextView
+        android:id="@+id/txtHoraVoltaAlmoco"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtVoltaAlmoco"
+        android:layout_toRightOf="@+id/txtHoraAlmoco"
+        android:textColor="#333333"
+        android:paddingLeft="5dp"
+        android:layout_gravity="top"
+        />
+
+    <TextView
+        android:id="@+id/txtSaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtVoltaAlmoco"
+        android:layout_alignTop="@+id/txtVoltaAlmoco"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/cinza"
+        android:text="@string/saida"
+        />
+
+    <TextView
+        android:id="@+id/txtHoraSaida"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSaida"
+        android:layout_toRightOf="@+id/txtHoraVoltaAlmoco"
+        android:layout_centerVertical="@+id/txtSaida"
+        android:textColor="#333333"
+        android:paddingLeft="5dp"
+        android:layout_gravity="top"
+        />
+
+</RelativeLayout>
