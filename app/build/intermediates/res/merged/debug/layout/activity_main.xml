@@ -90,4 +90,4 @@ android:background="@color/vermelho"/>
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:layout_gravity="end|bottom" android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_plus_white_24dp" />
-</android.support.design.widget.CoordinatorLayout><!-- From: file:/E:/Meus%20Projetos/Projetos%20Android/MeuPonto/meuponto/app/src/main/res/layout/activity_main.xml -->
+</android.support.design.widget.CoordinatorLayout>

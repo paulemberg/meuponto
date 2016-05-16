@@ -2151,11 +2151,11 @@ containing a value of this type.
         public static final int txtEntrada=0x7f0c007a;
         public static final int txtHoraAlmoco=0x7f0c007c;
         public static final int txtHoraEntrada=0x7f0c0078;
-        public static final int txtHoraSaida=0x7f0c0080;
-        public static final int txtHoraVoltaAlmoco=0x7f0c007e;
+        public static final int txtHoraSaida=0x7f0c007f;
+        public static final int txtHoraVoltaAlmoco=0x7f0c007d;
         public static final int txtMarcacoes=0x7f0c006d;
-        public static final int txtSaida=0x7f0c007f;
-        public static final int txtVoltaAlmoco=0x7f0c007d;
+        public static final int txtSaida=0x7f0c0080;
+        public static final int txtVoltaAlmoco=0x7f0c007e;
         public static final int txtdata=0x7f0c0077;
         public static final int txtid=0x7f0c0079;
         public static final int up=0x7f0c0008;
@@ -2262,7 +2262,8 @@ containing a value of this type.
         public static final int saida_almoco=0x7f060018;
         public static final int salvarAlteracao=0x7f060019;
         public static final int status_bar_notification_info_overflow=0x7f06001a;
-        public static final int titulo=0x7f06001b;
+        public static final int title_activity_editar=0x7f06001b;
+        public static final int titulo=0x7f06001c;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080075;

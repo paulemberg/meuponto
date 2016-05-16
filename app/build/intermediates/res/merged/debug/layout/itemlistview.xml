@@ -54,15 +54,14 @@
 
     <TextView
         android:id="@+id/txtHoraEntrada"
-        android:layout_width="87dp"
+        android:layout_width="77dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEntrada"
-        android:layout_toRightOf="@+id/imgBarra"
-        android:layout_marginLeft="15dp"
         android:textColor="#333333"
         android:paddingLeft="5dp"
         android:layout_gravity="top"
-        />
+        android:layout_below="@+id/txtEntrada"
+        android:layout_alignLeft="@+id/txtdata"
+        android:layout_alignStart="@+id/txtdata" />
 
     <TextView
         android:id="@+id/txtAlmoco"
@@ -80,11 +79,11 @@
         android:id="@+id/txtHoraAlmoco"
         android:layout_width="82dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtAlmoco"
-        android:layout_toRightOf="@+id/txtHoraEntrada"
         android:textColor="#333333"
         android:layout_gravity="top"
-        />
+        android:layout_above="@+id/txtid"
+        android:layout_toLeftOf="@+id/txtHoraVoltaAlmoco"
+        android:layout_toStartOf="@+id/txtHoraVoltaAlmoco" />
 
     <TextView
         android:id="@+id/txtVoltaAlmoco"
@@ -101,12 +100,12 @@
         android:id="@+id/txtHoraVoltaAlmoco"
         android:layout_width="85dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtVoltaAlmoco"
-        android:layout_toRightOf="@+id/txtHoraAlmoco"
         android:textColor="#333333"
         android:paddingLeft="5dp"
         android:layout_gravity="top"
-        />
+        android:layout_below="@+id/txtVoltaAlmoco"
+        android:layout_toLeftOf="@+id/txtHoraSaida"
+        android:layout_toStartOf="@+id/txtHoraSaida" />
 
     <TextView
         android:id="@+id/txtSaida"
@@ -124,12 +123,11 @@
         android:id="@+id/txtHoraSaida"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtSaida"
-        android:layout_toRightOf="@+id/txtHoraVoltaAlmoco"
-        android:layout_centerVertical="@+id/txtSaida"
         android:textColor="#333333"
         android:paddingLeft="5dp"
         android:layout_gravity="top"
-        />
+        android:layout_below="@+id/txtSaida"
+        android:layout_alignLeft="@+id/txtSaida"
+        android:layout_alignStart="@+id/txtSaida" />
 
-</RelativeLayout><!-- From: file:/E:/Meus%20Projetos/Projetos%20Android/MeuPonto/meuponto/app/src/main/res/layout/itemlistview.xml -->
+</RelativeLayout>

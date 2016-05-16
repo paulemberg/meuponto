@@ -658,11 +658,11 @@ int id txtEditdata 0x7f0c0070
 int id txtEntrada 0x7f0c007a
 int id txtHoraAlmoco 0x7f0c007c
 int id txtHoraEntrada 0x7f0c0078
-int id txtHoraSaida 0x7f0c0080
-int id txtHoraVoltaAlmoco 0x7f0c007e
+int id txtHoraSaida 0x7f0c007f
+int id txtHoraVoltaAlmoco 0x7f0c007d
 int id txtMarcacoes 0x7f0c006d
-int id txtSaida 0x7f0c007f
-int id txtVoltaAlmoco 0x7f0c007d
+int id txtSaida 0x7f0c0080
+int id txtVoltaAlmoco 0x7f0c007e
 int id txtdata 0x7f0c0077
 int id txtid 0x7f0c0079
 int id up 0x7f0c0008
@@ -759,7 +759,8 @@ int string saida 0x7f060017
 int string saida_almoco 0x7f060018
 int string salvarAlteracao 0x7f060019
 int string status_bar_notification_info_overflow 0x7f06001a
-int string titulo 0x7f06001b
+int string title_activity_editar 0x7f06001b
+int string titulo 0x7f06001c
 int style AlertDialog_AppCompat 0x7f080075
 int style AlertDialog_AppCompat_Light 0x7f080076
 int style Animation_AppCompat_Dialog 0x7f080077

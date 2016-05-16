@@ -8,4 +8,5 @@
     <string name="retorno_almoco">Retorno</string>
     <string name="marcacoes">Ultimas marcações</string>
     <string name="salvarAlteracao">Salvar Alteração</string>
+    <string name="title_activity_editar">Editar Registro</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.platec.meuponto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -136,11 +137,16 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bd.deletarRegistros();
-                Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
-                Snackbar.make(view, "Registros apagados", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                finish();
+
+                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
+                startActivity(intent);
+
+
+                //bd.deletarRegistros();
+                //Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
+                //Snackbar.make(view, "Registros apagados", Snackbar.LENGTH_LONG)
+                //        .setAction("Action", null).show();
+                //finish();
 
             }
         });

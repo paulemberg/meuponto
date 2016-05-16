@@ -12,4 +12,3 @@
     <TextView android:text="@string/titulo" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </RelativeLayout>
-<!-- From: file:/E:/Meus%20Projetos/Projetos%20Android/MeuPonto/meuponto/app/src/main/res/layout/content_main.xml -->
