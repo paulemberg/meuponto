@@ -575,6 +575,7 @@ int id end 0x7f0c0020
 int id end_padder 0x7f0c008f
 int id enterAlways 0x7f0c0014
 int id enterAlwaysCollapsed 0x7f0c0015
+int id excluir 0x7f0c0091
 int id exitUntilCollapsed 0x7f0c0016
 int id expand_activities_button 0x7f0c003e
 int id expanded_menu 0x7f0c004e
@@ -760,7 +761,8 @@ int string saida_almoco 0x7f060018
 int string salvarAlteracao 0x7f060019
 int string status_bar_notification_info_overflow 0x7f06001a
 int string title_activity_editar 0x7f06001b
-int string titulo 0x7f06001c
+int string title_menu_excluir 0x7f06001c
+int string titulo 0x7f06001d
 int style AlertDialog_AppCompat 0x7f080075
 int style AlertDialog_AppCompat_Light 0x7f080076
 int style Animation_AppCompat_Dialog 0x7f080077

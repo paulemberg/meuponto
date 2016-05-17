@@ -269,6 +269,7 @@
     <string name="salvarAlteracao">Salvar Alteração</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_editar">Editar Registro</string>
+    <string name="title_menu_excluir">Excluir</string>
     <string name="titulo">Meu Ponto</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

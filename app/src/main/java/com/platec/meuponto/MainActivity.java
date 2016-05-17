@@ -141,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, EditarActivity.class);
                 startActivity(intent);
 
-
                 //bd.deletarRegistros();
                 //Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
                 //Snackbar.make(view, "Registros apagados", Snackbar.LENGTH_LONG)
@@ -188,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
@@ -196,14 +196,20 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.excluir:
+                BD bd = new BD(this);
+                bd.deletarRegistros();
+                Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
+                finish();
+                startActivity(getIntent());
+                return true;
+           /* case R.id.help:
+                showHelp();
+                return true;*/
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
 

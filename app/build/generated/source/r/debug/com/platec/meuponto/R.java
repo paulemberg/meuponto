@@ -2068,6 +2068,7 @@ containing a value of this type.
         public static final int end_padder=0x7f0c008f;
         public static final int enterAlways=0x7f0c0014;
         public static final int enterAlwaysCollapsed=0x7f0c0015;
+        public static final int excluir=0x7f0c0091;
         public static final int exitUntilCollapsed=0x7f0c0016;
         public static final int expand_activities_button=0x7f0c003e;
         public static final int expanded_menu=0x7f0c004e;
@@ -2263,7 +2264,8 @@ containing a value of this type.
         public static final int salvarAlteracao=0x7f060019;
         public static final int status_bar_notification_info_overflow=0x7f06001a;
         public static final int title_activity_editar=0x7f06001b;
-        public static final int titulo=0x7f06001c;
+        public static final int title_menu_excluir=0x7f06001c;
+        public static final int titulo=0x7f06001d;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080075;

@@ -9,4 +9,5 @@
     <string name="marcacoes">Ultimas marcações</string>
     <string name="salvarAlteracao">Salvar Alteração</string>
     <string name="title_activity_editar">Editar Registro</string>
+    <string name="title_menu_excluir">Excluir</string>
 </resources>
