@@ -56,12 +56,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 MarcaHora mhora = new MarcaHora();
-                boolean novoregistro = false;
+                boolean novoregistro;
                 mhora.setEntrada(Utils.RetornaHora());
                 mhora.setData(Utils.RetornaData());
                 novoregistro = bd.ValidaPrimeiroRegistro(mhora);
 
-                if (novoregistro == false) {
+                //for test add a new register without compare date uncoment line down;
+                //novoregistro = false;
+
+                if (!novoregistro) {
                     bd.insereHora(mhora);
                     carregaListView(lista);
                     Snackbar.make(v, "Tenha um bom dia", Snackbar.LENGTH_SHORT)
@@ -165,18 +168,25 @@ public class MainActivity extends AppCompatActivity {
 
             if (list.get(0).getSaida_almoco() != null) {
                 btnSaidaAlmoco.setEnabled(false);
+            }else{
+                btnSaidaAlmoco.setEnabled(true);
             }
 
             if (list.get(0).getRetorno_almoco() != null) {
                 btnRetornoAlmoco.setEnabled(false);
+            }else{
+                btnRetornoAlmoco.setEnabled(true);
             }
+
 
             if (list.get(0).getSaida() != null) {
                 btnSaida.setEnabled(false);
+            }else{
+                btnSaida.setEnabled(true);
             }
 
             String data = Utils.RetornaData();
-            if(list.get(0).getData()!= data && list.get(0).getSaida() != null){
+            if(list.get(0).getData().equals(data) && list.get(0).getSaida() != null){
                 btnEntrada.setEnabled(true);
             }
         }

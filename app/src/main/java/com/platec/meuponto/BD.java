@@ -25,7 +25,7 @@ public class BD {
 
     public void insereHora(MarcaHora marcaHora) {
         ContentValues values = new ContentValues();
-        if (!ValidaPrimeiroRegistro(marcaHora)) {
+        if (ValidaPrimeiroRegistro(marcaHora)) {
             values.put("data", String.valueOf(marcaHora.getData()));
         }
 
@@ -51,16 +51,22 @@ public class BD {
 
     public boolean ValidaPrimeiroRegistro(MarcaHora data) {
         String[] colunas = new String[]{"data"};
+        boolean retorno;
         Cursor cursor = db.query("horarios_tb", colunas, "data='" + data.getData() + "'", null, null, null, null, null);
+
         if (cursor.getCount() > 0) {
-            return true;
+            retorno = true;
         } else {
-            return false;
+            retorno = false;
         }
+
+        cursor.close();
+
+        return  retorno;
     }
 
     public List<MarcaHora> buscar() {
-        List<MarcaHora> list = new ArrayList<MarcaHora>();
+        List<MarcaHora> list = new ArrayList<>();
         String[] colunas = new String[]{"_id", "data", "entrada", "saida_almoco", "retorno_almoco", "saida"};
         //String[] colunas = new String[]{"entrada","saida_almoco","retorno_almoco","saida"};
         Cursor cursor = db.query("horarios_tb", colunas, null, null, null, null, "_id desc");
@@ -78,7 +84,7 @@ public class BD {
                 mh.setSaida(cursor.getString(5));
                 list.add(mh);
             } while (cursor.moveToNext());
-
+            cursor.close();
         }
         return (list);
     }

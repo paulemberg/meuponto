@@ -30,7 +30,6 @@ public class Utils {
 
 
     public static String RetornaID(ListView lv) {
-        View listItem = (View) lv.getChildAt(0);
         TextView txtid = (TextView) lv.findViewById(R.id.txtid);
         return txtid.getText().toString();
     }

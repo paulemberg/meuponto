@@ -77,11 +77,12 @@ android:background="@color/vermelho"/>
 
         android:id="@+id/lst_principal"
     android:layout_width="wrap_content"
-    android:layout_height="450dp"
-        android:dividerHeight="2sp"
+    android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/txtMarcacoes">
+        android:layout_below="@+id/txtMarcacoes"
+        android:layout_alignParentRight="true">
 
     </ListView>
 
