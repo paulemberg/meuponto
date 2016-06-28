@@ -136,22 +136,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
-                startActivity(intent);
-
-                //bd.deletarRegistros();
-                //Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
-                //Snackbar.make(view, "Registros apagados", Snackbar.LENGTH_LONG)
-                //        .setAction("Action", null).show();
-                //finish();
-
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
+//                startActivity(intent);
+//
+//                //bd.deletarRegistros();
+//                //Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
+//                //Snackbar.make(view, "Registros apagados", Snackbar.LENGTH_LONG)
+//                //        .setAction("Action", null).show();
+//                //finish();
+//
+//            }
+//        });
     }
 
     private void carregaListView(ListView lista) {
@@ -185,9 +185,11 @@ public class MainActivity extends AppCompatActivity {
                 btnSaida.setEnabled(true);
             }
 
-            String data = Utils.RetornaData();
-            if(list.get(0).getData().equals(data) && list.get(0).getSaida() != null){
-                btnEntrada.setEnabled(true);
+            if(list.get(0).getData()!= null) {
+                String data = Utils.RetornaData();
+                if (list.get(0).getData().equals(data) && list.get(0).getSaida() != null) {
+                    btnEntrada.setEnabled(true);
+                }
             }
         }
 

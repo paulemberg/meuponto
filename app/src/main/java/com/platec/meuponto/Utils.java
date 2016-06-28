@@ -28,7 +28,6 @@ public class Utils {
         return dataFormatada;
     }
 
-
     public static String RetornaID(ListView lv) {
         TextView txtid = (TextView) lv.findViewById(R.id.txtid);
         return txtid.getText().toString();
@@ -39,7 +38,6 @@ public class Utils {
         botao.setEnabled(habilita);
         return botao;
     }
-
 
 
 }

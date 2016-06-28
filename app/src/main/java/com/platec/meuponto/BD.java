@@ -25,14 +25,20 @@ public class BD {
 
     public void insereHora(MarcaHora marcaHora) {
         ContentValues values = new ContentValues();
-        if (ValidaPrimeiroRegistro(marcaHora)) {
-            values.put("data", String.valueOf(marcaHora.getData()));
-        }
+        if (!ValidaPrimeiroRegistro(marcaHora)) {
 
-        if (marcaHora.getEntrada() != null) {
-            values.put("entrada", marcaHora.getEntrada());
-            db.insert("horarios_tb", null, values);
-        } else if (marcaHora.getSaida_almoco() != null) {
+            if (marcaHora.getEntrada() != null) {
+                values.put("data", String.valueOf(marcaHora.getData()));
+                values.put("entrada", marcaHora.getEntrada());
+                db.insert("horarios_tb", null, values);
+            }else
+            {
+                values.put("data", Utils.RetornaData());
+                values.put("entrada", marcaHora.getEntrada());
+                db.insert("horarios_tb", null, values);
+            }
+
+        }else if (marcaHora.getSaida_almoco() != null) {
             values.put("saida_almoco", marcaHora.getSaida_almoco());
             db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
         } else if (marcaHora.getRetorno_almoco() != null) {
@@ -42,6 +48,7 @@ public class BD {
             values.put("saida", marcaHora.getSaida());
             db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
         }
+
 
     }
 
@@ -68,10 +75,10 @@ public class BD {
     public List<MarcaHora> buscar() {
         List<MarcaHora> list = new ArrayList<>();
         String[] colunas = new String[]{"_id", "data", "entrada", "saida_almoco", "retorno_almoco", "saida"};
-        //String[] colunas = new String[]{"entrada","saida_almoco","retorno_almoco","saida"};
+
         Cursor cursor = db.query("horarios_tb", colunas, null, null, null, null, "_id desc");
 
-        if (cursor.getCount() > 0) {
+        if (cursor != null &&  cursor.getCount()>0) {
             cursor.moveToFirst();
             do {
                 MarcaHora mh = new MarcaHora();
