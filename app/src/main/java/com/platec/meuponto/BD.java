@@ -17,7 +17,7 @@ import java.util.List;
 public class BD {
     private SQLiteDatabase db;
 
-    //final String[] colunas = new String[]{"_id","data","entrada","saida_almoco","retorno_almoco","saida"};
+
     public BD(Context context) {
         BDCore auxBd = new BDCore(context);
         db = auxBd.getWritableDatabase();
