@@ -95,4 +95,27 @@ public class BD {
         }
         return (list);
     }
+
+    public MarcaHora EditarRegistro(String id)
+    {
+        MarcaHora marcacao = new MarcaHora();
+
+        String[] colunas = new String[]{"_id", "data", "entrada", "saida_almoco", "retorno_almoco", "saida"};
+
+        Cursor cursor = db.query("horarios_tb", colunas, "_id=" + id, null, null, null, "_id desc");
+
+        if (cursor != null &&  cursor.getCount()>0) {
+            cursor.moveToFirst();
+            do {
+                marcacao.set_id(cursor.getString(0));
+                marcacao.setData(cursor.getString(1));
+                marcacao.setEntrada(cursor.getString(2));
+                marcacao.setSaida_almoco(cursor.getString(3));
+                marcacao.setRetorno_almoco(cursor.getString(4));
+                marcacao.setSaida(cursor.getString(5));
+            } while (cursor.moveToNext());
+            cursor.close();
+        }
+        return (marcacao);
+    }
 }

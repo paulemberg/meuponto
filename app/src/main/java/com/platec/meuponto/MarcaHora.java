@@ -60,4 +60,9 @@ public class MarcaHora {
         this.saida = saida;
     }
 
+    public void RegistrarHora(MarcaHora marcacao)
+    {
+
+    }
+
 }

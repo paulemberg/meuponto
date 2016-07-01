@@ -1,6 +1,7 @@
 package com.platec.meuponto;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,12 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private Button btnSaidaAlmoco;
     private Button btnRetornoAlmoco;
     private Button btnSaida;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
 
     @Override
@@ -40,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         carregaListView(lista);
-
 
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -88,8 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Snackbar.make(v, "Bom almoço", Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
-                }
-                else {
+                } else {
                     Toast.makeText(getApplicationContext(), "Não existe registro de entrada", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -135,6 +144,25 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                //Snackbar.make(view,"CliqueLongo", Snackbar.LENGTH_LONG).setAction("Action",null).show();
+
+                //TODO
+                Bundle bundle = new Bundle();
+                String x = ((Map)parent.getItemAtPosition(position)).get("txtid").toString();
+                bundle.putString("id",x);
+                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                return false;
+            }
+        });
+
+
+
+
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -152,6 +180,9 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void carregaListView(ListView lista) {
@@ -168,24 +199,24 @@ public class MainActivity extends AppCompatActivity {
 
             if (list.get(0).getSaida_almoco() != null) {
                 btnSaidaAlmoco.setEnabled(false);
-            }else{
+            } else {
                 btnSaidaAlmoco.setEnabled(true);
             }
 
             if (list.get(0).getRetorno_almoco() != null) {
                 btnRetornoAlmoco.setEnabled(false);
-            }else{
+            } else {
                 btnRetornoAlmoco.setEnabled(true);
             }
 
 
             if (list.get(0).getSaida() != null) {
                 btnSaida.setEnabled(false);
-            }else{
+            } else {
                 btnSaida.setEnabled(true);
             }
 
-            if(list.get(0).getData()!= null) {
+            if (list.get(0).getData() != null) {
                 String data = Utils.RetornaData();
                 if (list.get(0).getData().equals(data) && list.get(0).getSaida() != null) {
                     btnEntrada.setEnabled(true);
@@ -225,4 +256,45 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.platec.meuponto/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.platec.meuponto/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
+    }
 }
