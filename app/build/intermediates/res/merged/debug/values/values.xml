@@ -305,12 +305,13 @@
     <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
+    <string name="data">Data</string>
     <string name="entrada">Entrada</string>
     <string name="marcacoes">Ultimas marcações</string>
     <string name="retorno_almoco">Retorno</string>
     <string name="saida">Saída</string>
     <string name="saida_almoco">Almoço</string>
-    <string name="salvarAlteracao">Salvar Alteração</string>
+    <string name="salvarAlteracao">Salvar</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_editar">Editar Registro</string>
     <string name="title_menu_excluir">Excluir</string>

@@ -2332,16 +2332,17 @@ containing a value of this type.
         public static final int common_google_play_services_updating_text=0x7f060028;
         public static final int common_google_play_services_updating_title=0x7f060029;
         public static final int common_open_on_phone=0x7f06002a;
-        public static final int entrada=0x7f060034;
-        public static final int marcacoes=0x7f060035;
-        public static final int retorno_almoco=0x7f060036;
-        public static final int saida=0x7f060037;
-        public static final int saida_almoco=0x7f060038;
-        public static final int salvarAlteracao=0x7f060039;
-        public static final int status_bar_notification_info_overflow=0x7f06003a;
-        public static final int title_activity_editar=0x7f06003b;
-        public static final int title_menu_excluir=0x7f06003c;
-        public static final int titulo=0x7f06003d;
+        public static final int data=0x7f060034;
+        public static final int entrada=0x7f060035;
+        public static final int marcacoes=0x7f060036;
+        public static final int retorno_almoco=0x7f060037;
+        public static final int saida=0x7f060038;
+        public static final int saida_almoco=0x7f060039;
+        public static final int salvarAlteracao=0x7f06003a;
+        public static final int status_bar_notification_info_overflow=0x7f06003b;
+        public static final int title_activity_editar=0x7f06003c;
+        public static final int title_menu_excluir=0x7f06003d;
+        public static final int titulo=0x7f06003e;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080075;

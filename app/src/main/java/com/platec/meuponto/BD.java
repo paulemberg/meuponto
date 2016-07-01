@@ -38,13 +38,46 @@ public class BD {
                 db.insert("horarios_tb", null, values);
             }
 
-        }else if (marcaHora.getSaida_almoco() != null) {
+        }
+        if (marcaHora.getSaida_almoco() != null) {
             values.put("saida_almoco", marcaHora.getSaida_almoco());
             db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
-        } else if (marcaHora.getRetorno_almoco() != null) {
+        }
+        if (marcaHora.getRetorno_almoco() != null) {
             values.put("retorno_almoco", marcaHora.getRetorno_almoco());
             db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
-        } else if (marcaHora.getSaida() != null) {
+        }
+        if (marcaHora.getSaida() != null) {
+            values.put("saida", marcaHora.getSaida());
+            db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
+        }
+
+
+    }
+    public void insereHora(MarcaHora marcaHora, boolean novoRegistro) {
+        ContentValues values = new ContentValues();
+        if (!novoRegistro) {
+            if (marcaHora.getEntrada() != null) {
+                values.put("data", String.valueOf(marcaHora.getData()));
+                values.put("entrada", marcaHora.getEntrada());
+                db.insert("horarios_tb", null, values);
+            }else
+            {
+                values.put("data", Utils.RetornaData());
+                values.put("entrada", marcaHora.getEntrada());
+                db.insert("horarios_tb", null, values);
+            }
+
+        }
+        if (marcaHora.getSaida_almoco() != null) {
+            values.put("saida_almoco", marcaHora.getSaida_almoco());
+            db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
+        }
+        if (marcaHora.getRetorno_almoco() != null) {
+            values.put("retorno_almoco", marcaHora.getRetorno_almoco());
+            db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
+        }
+        if (marcaHora.getSaida() != null) {
             values.put("saida", marcaHora.getSaida());
             db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
         }

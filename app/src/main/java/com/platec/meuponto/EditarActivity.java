@@ -23,19 +23,25 @@ public class EditarActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.editar);
 
-
-
         Bundle extra = getIntent().getExtras();
-        MarcaHora marcacao = new MarcaHora();
+        MarcaHora marcacao;
         if(extra != null)
         {
             String value = extra.getString("id");
             BD bd = new BD(this);
 
             marcacao =  bd.EditarRegistro(value);
+            TextView TxtData = (TextView) this.findViewById(R.id.txtEditdata);
             TextView TxtEntrada = (TextView) this.findViewById(R.id.txtEditEntrada);
-            TxtEntrada.setText(marcacao.getEntrada());
+            TextView TxtAlmoco = (TextView) this.findViewById(R.id.txtEditAlmoco);
+            TextView TxtRetornoAlmoco = (TextView) this.findViewById(R.id.txtEditVoltaAlmoco);
+            TextView TxtSaida = (TextView) this.findViewById(R.id.txtEditSaida);
 
+            TxtData.setText(marcacao.getData());
+            TxtEntrada.setText(marcacao.getEntrada());
+            TxtAlmoco.setText(marcacao.getSaida_almoco());
+            TxtRetornoAlmoco.setText(marcacao.getRetorno_almoco());
+            TxtSaida.setText(marcacao.getSaida());
         }
 
 

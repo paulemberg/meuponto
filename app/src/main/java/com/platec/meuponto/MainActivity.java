@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 //novoregistro = false;
 
                 if (!novoregistro) {
-                    bd.insereHora(mhora);
+                    //bd.insereHora(mhora);
+                    bd.insereHora(mhora,novoregistro);
                     carregaListView(lista);
                     Snackbar.make(v, "Tenha um bom dia", Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
@@ -147,15 +149,13 @@ public class MainActivity extends AppCompatActivity {
         lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                //Snackbar.make(view,"CliqueLongo", Snackbar.LENGTH_LONG).setAction("Action",null).show();
+              TextView id_ = (TextView) view.findViewById(R.id.txtid);
+              Bundle bundle = new Bundle();
+              bundle.putString("id", id_.getText().toString());
+              Intent intent = new Intent(MainActivity.this, EditarActivity.class);
+              intent.putExtras(bundle);
+              startActivity(intent);
 
-                //TODO
-                Bundle bundle = new Bundle();
-                String x = ((Map)parent.getItemAtPosition(position)).get("txtid").toString();
-                bundle.putString("id",x);
-                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
                 return false;
             }
         });
