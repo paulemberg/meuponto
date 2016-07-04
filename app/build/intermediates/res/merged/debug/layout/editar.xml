@@ -31,9 +31,10 @@
         android:layout_height="wrap_content">
     <EditText
         android:id="@+id/txtEditAlmoco"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:hint="@string/saida_almoco"/>
+        android:hint="@string/saida_almoco"
+        android:gravity="center"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout

@@ -76,18 +76,38 @@ public class ListviewAdapter extends BaseAdapter {
 
 
         ImageView imgBarra = (ImageView) view.findViewById(R.id.imgBarra);
+        int ultimaCor;
         if (marcaHora.getEntrada() != null && marcaHora.getSaida_almoco() != null
                 && marcaHora.getRetorno_almoco() != null && marcaHora.getSaida() != null) {
-            imgBarra.setBackgroundColor(retornaCor());
+            int cor;
+            cor = retornaCor();
+            ultimaCor = cor;
+            if(cor != ultimaCor)
+            {
+                imgBarra.setBackgroundColor(cor);
+            }else
+            {
+                cor = retornaCor();
+                imgBarra.setBackgroundColor(cor);
+            }
+            ultimaCor = cor;
         }
         return view;
     }
 
     private int retornaCor() {
 
-        Random rnd = new Random();
-        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
-        return color;
+        /*Random rnd = new Random();
+        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));*/
+        int[] colors = context.getResources().getIntArray(R.array.rainbow);
+        int totalColors = colors.length;
+        return colors[new Random().nextInt(totalColors)];
+
+
+//        String[] colors = context.getResources().getStringArray(R.array.rainbow);
+//        int totalColors = colors.length;
+//        String randomStr = array[new Random().nextInt(array.length)];
+//        return Color.parseColor(randomStr);
     }
 
 }

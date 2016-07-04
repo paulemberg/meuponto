@@ -11,4 +11,14 @@
     <string name="salvarAlteracao">Salvar</string>
     <string name="title_activity_editar">Editar Registro</string>
     <string name="title_menu_excluir">Excluir</string>
+    <string name="registro_apagado">Registros apagados</string>
+    <string name="saudacao_entrada">Tenha um bom dia</string>
+    <string name="saudacao_almoco">Bom almoço</string>
+    <string name="saudacao_retorno_almoco">Bem vindo de volta</string>
+    <string name="saudacao_saida">Até Amanhã</string>
+    <string name="registro_duplicado">Já existe um Registro para essa data</string>
+    <string name="registro_inexistente">Não existe registro de entrada</string>
+
+
+
 </resources>

@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="rainbow">
+            <!--<item>@color/bright_pink</item>-->
+            <!--<item>@color/red</item>-->
+            <!--<item>@color/orange</item>-->
+            <!--<item>@color/yellow</item>-->
+            <!--<item>@color/brown</item>-->
+            <!--<item>@color/green</item>-->
+            <!--<item>@color/spring_green</item>-->
+            <!--<item>@color/cyan</item>-->
+            <!--<item>@color/azure</item>-->
+            <!--<item>@color/blue</item>-->
+            <!--<item>@color/violet</item>-->
+            <!--<item>@color/magenta</item>-->
+
+            <item>@color/corLista1</item>
+            <item>@color/corLista2</item>
+            <item>@color/corLista3</item>
+            <item>@color/corLista4</item>
+            <item>@color/corLista5</item>
+
+        </array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -19,10 +40,12 @@
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="amarelo">#FFC107</color>
     <color name="azul">#448AFF</color>
+    <color name="azure">#007FFF</color>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
+    <color name="blue">#0000FF</color>
     <color name="branco">#fff</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -30,6 +53,8 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
+    <color name="bright_pink">#FF007F</color>
+    <color name="brown">#5D4037</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="cinza">#9E9E9E</color>
@@ -52,6 +77,7 @@
     <color name="corLista3">#AED581</color>
     <color name="corLista4">#FF8A65</color>
     <color name="corLista5">#FF7043</color>
+    <color name="cyan">#00FFFF</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
@@ -61,6 +87,7 @@
     <color name="fab_stroke_end_outer_color">#0F000000</color>
     <color name="fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
+    <color name="green">#00796B</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -68,11 +95,13 @@
     <color name="laranja">#E64A19</color>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
+    <color name="magenta">#FF00FF</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
+    <color name="orange">#FF7F00</color>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
     <color name="primary_material_dark">#ff212121</color>
@@ -81,6 +110,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="red">#FF0000</color>
     <color name="ripple_material_dark">#4dffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -91,12 +121,15 @@
     <color name="shadow_mid_color">#14000000</color>
     <color name="shadow_start_color">#44000000</color>
     <color name="snackbar_background_color">#323232</color>
+    <color name="spring_green">#00FF7F</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="verde">#4CAF50</color>
     <color name="vermelho">#F44336</color>
+    <color name="violet">#7F00FF</color>
+    <color name="yellow">#FFFF00</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
@@ -308,10 +341,17 @@
     <string name="data">Data</string>
     <string name="entrada">Entrada</string>
     <string name="marcacoes">Ultimas marcações</string>
+    <string name="registro_apagado">Registros apagados</string>
+    <string name="registro_duplicado">Já existe um Registro para essa data</string>
+    <string name="registro_inexistente">Não existe registro de entrada</string>
     <string name="retorno_almoco">Retorno</string>
     <string name="saida">Saída</string>
     <string name="saida_almoco">Almoço</string>
     <string name="salvarAlteracao">Salvar</string>
+    <string name="saudacao_almoco">Bom almoço</string>
+    <string name="saudacao_entrada">Tenha um bom dia</string>
+    <string name="saudacao_retorno_almoco">Bem vindo de volta</string>
+    <string name="saudacao_saida">Até Amanhã</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_editar">Editar Registro</string>
     <string name="title_menu_excluir">Excluir</string>

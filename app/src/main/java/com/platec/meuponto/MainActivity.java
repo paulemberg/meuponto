@@ -67,22 +67,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 MarcaHora mhora = new MarcaHora();
-                boolean novoregistro;
+                boolean registroExiste;
                 mhora.setEntrada(Utils.RetornaHora());
                 mhora.setData(Utils.RetornaData());
-                novoregistro = bd.ValidaPrimeiroRegistro(mhora);
+                registroExiste = bd.ValidaPrimeiroRegistro(mhora);
 
                 //for test add a new register without compare date uncoment line down;
-                //novoregistro = false;
+                registroExiste = false;
 
-                if (!novoregistro) {
+                if (!registroExiste) {
                     //bd.insereHora(mhora);
-                    bd.insereHora(mhora,novoregistro);
+                    bd.insereHora(mhora,registroExiste);
                     carregaListView(lista);
-                    Snackbar.make(v, "Tenha um bom dia", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(v, getString(R.string.saudacao_entrada), Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Já existe um Registro para essa data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.registro_duplicado, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -98,10 +98,10 @@ public class MainActivity extends AppCompatActivity {
                     bd.insereHora(mhora);
                     carregaListView(lista);
 
-                    Snackbar.make(v, "Bom almoço", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(v, R.string.saudacao_almoco, Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Não existe registro de entrada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.registro_inexistente, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -118,11 +118,11 @@ public class MainActivity extends AppCompatActivity {
 
                     carregaListView(lista);
 
-                    Snackbar.make(v, "Bem vindo de volta", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(v, R.string.saudacao_retorno_almoco, Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "Não existe registro de entrada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.registro_inexistente, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -137,10 +137,10 @@ public class MainActivity extends AppCompatActivity {
                     mhora.set_id(Utils.RetornaID(lista));
                     bd.insereHora(mhora);
                     carregaListView(lista);
-                    Snackbar.make(v, "Até Amanhã", Snackbar.LENGTH_SHORT)
+                    Snackbar.make(v, R.string.saudacao_saida, Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Não existe registro de entrada", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.registro_inexistente, Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.excluir:
                 BD bd = new BD(this);
                 bd.deletarRegistros();
-                Toast.makeText(getApplicationContext(), "Registros apagados", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),getString(R.string.registro_apagado) , Toast.LENGTH_SHORT).show();
                 finish();
                 startActivity(getIntent());
                 return true;
