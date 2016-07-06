@@ -1,18 +1,13 @@
 package com.platec.meuponto;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -56,7 +51,7 @@ public class ListviewAdapter extends BaseAdapter {
         View view = inflater.inflate(R.layout.itemlistview, null);
 
         TextView txtdata = (TextView) view.findViewById(R.id.txtdata);
-        txtdata.setText("Data: " + marcaHora.getData());
+        txtdata.setText(marcaHora.getData());
 
         TextView txtid = (TextView) view.findViewById(R.id.txtid);
         txtid.setText(marcaHora.get_id());

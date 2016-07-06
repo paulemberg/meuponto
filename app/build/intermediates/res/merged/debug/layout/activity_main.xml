@@ -18,13 +18,12 @@
     </android.support.design.widget.AppBarLayout>
 
 
-
-
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical" android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:id="@+id/inicio" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/inicio"
+        xmlns:ads="http://schemas.android.com/apk/res-auto" >
 
 <Button
 android:id="@+id/btn_entrada"
@@ -33,7 +32,7 @@ android:layout_height="75dp"
 android:layout_marginTop="70dp"
 android:layout_marginLeft="25dp"
 android:text="@string/entrada"
-android:background="@color/verde"/>
+    android:background="@color/verde"/>
 
 <Button
 android:id="@+id/btn_saida_Almoco"
@@ -82,10 +81,19 @@ android:background="@color/vermelho"/>
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtMarcacoes"
-        android:layout_alignParentRight="true">
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/adView">
 
     </ListView>
-
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
 </RelativeLayout>
     <!--<android.support.design.widget.FloatingActionButton android:id="@+id/fab"-->
         <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->

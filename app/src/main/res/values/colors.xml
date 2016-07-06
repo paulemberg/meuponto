@@ -11,13 +11,14 @@
     <color name="azul">#448AFF</color>
     <color name="branco">#fff</color>
     <color name="cinza">#9E9E9E</color>
+    <color name="marrom">#D7CCC8</color>
     <color name="corLista1">#81C784</color>
     <color name="corLista2">#FFB74D</color>
     <color name="corLista3">#AED581</color>
     <color name="corLista4">#FF8A65</color>
     <color name="corLista5">#FF7043</color>
     <color name="bright_pink">#FF007F</color>
-
+    <color name="cinza_escuro">#263238</color>
         <color name="orange">#FF7F00</color>
         <color name="yellow">#FFFF00</color>
         <color name="red">#FF0000</color>

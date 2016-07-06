@@ -3,7 +3,6 @@ package com.platec.meuponto;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,12 +16,16 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.List;
-import java.util.Map;
+
+/*import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;*/
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client2;
 
 
     @Override
@@ -73,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 registroExiste = bd.ValidaPrimeiroRegistro(mhora);
 
                 //for test add a new register without compare date uncoment line down;
-                registroExiste = false;
+                //registroExiste = false;
 
                 if (!registroExiste) {
                     //bd.insereHora(mhora);
-                    bd.insereHora(mhora,registroExiste);
+                    bd.insereHora(mhora, registroExiste);
                     carregaListView(lista);
                     Snackbar.make(v, getString(R.string.saudacao_entrada), Snackbar.LENGTH_SHORT)
                             .setAction("Action", null).show();
@@ -149,19 +157,16 @@ public class MainActivity extends AppCompatActivity {
         lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-              TextView id_ = (TextView) view.findViewById(R.id.txtid);
-              Bundle bundle = new Bundle();
-              bundle.putString("id", id_.getText().toString());
-              Intent intent = new Intent(MainActivity.this, EditarActivity.class);
-              intent.putExtras(bundle);
-              startActivity(intent);
+                TextView id_ = (TextView) view.findViewById(R.id.txtid);
+                Bundle bundle = new Bundle();
+                bundle.putString("id", id_.getText().toString());
+                Intent intent = new Intent(MainActivity.this, EditarActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
 
                 return false;
             }
         });
-
-
-
 
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -182,7 +187,13 @@ public class MainActivity extends AppCompatActivity {
 //        });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        client2 = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void carregaListView(ListView lista) {
@@ -243,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.excluir:
                 BD bd = new BD(this);
                 bd.deletarRegistros();
-                Toast.makeText(getApplicationContext(),getString(R.string.registro_apagado) , Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.registro_apagado), Toast.LENGTH_SHORT).show();
                 finish();
                 startActivity(getIntent());
                 return true;
@@ -255,10 +266,50 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
 
-
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client2.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.platec.meuponto/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client2, viewAction);
+    }
 
     @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.platec.meuponto/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client2, viewAction);
+        client2.disconnect();
+    }
+
+
+
+
+   /* @Override
     public void onStart() {
         super.onStart();
 
@@ -296,5 +347,5 @@ public class MainActivity extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-    }
+    }*/
 }
