@@ -27,44 +27,43 @@
 
 <Button
 android:id="@+id/btn_entrada"
-android:layout_width="150dp"
-android:layout_height="75dp"
+android:layout_width="100dp"
+android:layout_height="100dp"
 android:layout_marginTop="70dp"
-android:layout_marginLeft="25dp"
+android:layout_marginLeft="125dp"
 android:text="@string/entrada"
-    android:background="@color/verde"/>
+    android:visibility="invisible"
+    android:background="@drawable/botao_oval_entrada"/>
 
 <Button
 android:id="@+id/btn_saida_Almoco"
-android:layout_width="150dp"
-android:layout_height="75dp"
-android:layout_toRightOf="@+id/btn_entrada"
-android:layout_marginTop="70dp"
-android:layout_marginLeft="10dp"
-android:text="@string/saida_almoco"
-android:background="@color/amarelo"/>
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="125dp"
+    android:text="@string/saida_almoco"
+    android:visibility="invisible"
+android:background="@drawable/botao_oval_almoco"/>
 
 <Button
 android:id="@+id/btn_ret_almoco"
-android:layout_width="150dp"
-android:layout_height="75dp"
-android:layout_below="@+id/btn_entrada"
-android:layout_marginTop="10dp"
-android:layout_marginLeft="25dp"
-android:text="@string/retorno_almoco"
-android:background="@color/azul"
-    />
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="125dp"
+    android:text="@string/retorno_almoco"
+    android:visibility="invisible"
+    android:background="@drawable/botao_oval_retorno_almoco"/>
 
 <Button
 android:id="@+id/btn_saida"
-android:layout_width="150dp"
-android:layout_height="75dp"
-android:layout_below="@+id/btn_saida_Almoco"
-android:layout_toRightOf="@+id/btn_ret_almoco"
-android:layout_marginTop="10dp"
-android:layout_marginLeft="10dp"
-android:text="@string/saida"
-android:background="@color/vermelho"/>
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="125dp"
+    android:text="@string/saida"
+    android:visibility="invisible"
+    android:background="@drawable/botao_oval_saida"/>
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="25dp"

@@ -205,34 +205,41 @@ public class MainActivity extends AppCompatActivity {
         if (list.size() > 0) {
 
             if (list.get(0).getEntrada() != null) {
-                btnEntrada.setEnabled(false);
+                btnEntrada.setVisibility(View.INVISIBLE);
             }
 
             if (list.get(0).getSaida_almoco() != null) {
-                btnSaidaAlmoco.setEnabled(false);
+                btnSaidaAlmoco.setVisibility(View.INVISIBLE);
             } else {
-                btnSaidaAlmoco.setEnabled(true);
+                btnSaidaAlmoco.setVisibility(View.VISIBLE);
+                return;
             }
 
             if (list.get(0).getRetorno_almoco() != null) {
-                btnRetornoAlmoco.setEnabled(false);
+                btnRetornoAlmoco.setVisibility(View.INVISIBLE);
             } else {
-                btnRetornoAlmoco.setEnabled(true);
+                btnRetornoAlmoco.setVisibility(View.VISIBLE);
+                return;
             }
 
 
             if (list.get(0).getSaida() != null) {
-                btnSaida.setEnabled(false);
+                btnSaida.setVisibility(View.INVISIBLE);
             } else {
-                btnSaida.setEnabled(true);
+                btnSaida.setVisibility(View.VISIBLE);
+                return;
             }
 
             if (list.get(0).getData() != null) {
                 String data = Utils.RetornaData();
                 if (list.get(0).getData().equals(data) && list.get(0).getSaida() != null) {
-                    btnEntrada.setEnabled(true);
+                    btnEntrada.setVisibility(View.VISIBLE);
+                    btnEntrada.setEnabled(false);
                 }
             }
+        }else
+        {
+            btnEntrada.setVisibility(View.VISIBLE);
         }
 
     }
