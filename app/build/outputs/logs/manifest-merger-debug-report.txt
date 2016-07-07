@@ -23,6 +23,8 @@ MERGED from [com.google.firebase:firebase-iid:9.0.0] D:\Workspace\Android\meupon
 		ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:5:5-35:19
+MERGED from [com.android.support:support-v13:20.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\AndroidManifest.xml:17:5-19
+MERGED from [com.android.support:support-v4:23.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:9.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.0.0\AndroidManifest.xml:24:5-32:19
@@ -129,7 +131,7 @@ ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.x
 	android:theme
 		ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:13:13-56
 	android:name
-		ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:11:13-41
+		ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:11:13-60
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
@@ -183,6 +185,8 @@ MERGED from [com.google.android.gms:play-services-basement:9.0.0] D:\Workspace\A
 		ADDED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml:33:13-58
 uses-sdk
 INJECTED from D:\Workspace\Android\meuponto\meuponto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v13:20.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\AndroidManifest.xml:16:5-43
+MERGED from [com.android.support:support-v4:23.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-ads:9.0.0] D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.0.0\AndroidManifest.xml:19:5-42

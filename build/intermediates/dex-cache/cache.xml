@@ -68,7 +68,7 @@
         jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="e999f19a5027a27c9d300964d9193c27f648fe5d">
+        sha1="bb3980fa1669a6e8b33cdd46ae4d0650d2dec894">
         <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_50e887f32d656c6fc802f05ed391a9f3219ad57a\classes.dex" />
     </item>
     <item
@@ -79,11 +79,25 @@
         <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.0_d578b6f45393804e86474b74a1b9c4c55f0c87e0\classes.dex" />
     </item>
     <item
+        jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e128103d5281ddd26195a7f980b36d0d005a4e56">
+        <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-20.0.0_da2cab67613ed6421846bff7247eaa6f2d4bd003\classes.dex" />
+    </item>
+    <item
         jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="22.0.1"
-        sha1="bbd79cedefebc278123f6735a6156c2caa26dde8">
+        sha1="762fc0f4718cf8938e3bbee07bfcc762427c82a3">
         <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eeeaa06e537feabcef9af580cfd96a91a7d2988c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="27bbd3982cdfe4468a9bf99c8c773734a9049e33">
+        <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-20.0.0_badc3133b5ae49a66c9d07def0fef074108e554c\classes.dex" />
     </item>
     <item
         jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.0.0\jars\classes.jar"

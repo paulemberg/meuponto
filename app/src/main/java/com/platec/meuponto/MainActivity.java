@@ -24,9 +24,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.List;
 
-/*import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;*/
-
 public class MainActivity extends AppCompatActivity {
 
     private SimpleCursorAdapter dataAdapter;
@@ -50,14 +47,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         final BD bd = new BD(this);
         final ListView lista = (ListView) findViewById(R.id.lst_principal);
         btnEntrada = (Button) findViewById(R.id.btn_entrada);
         btnSaidaAlmoco = (Button) findViewById(R.id.btn_saida_Almoco);
         btnRetornoAlmoco = (Button) findViewById(R.id.btn_ret_almoco);
         btnSaida = (Button) findViewById(R.id.btn_saida);
+        Toolbar toolbar;
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
 
+//        if(getSupportActionBar() != null) {
+//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//            //
+//        }
+//        else{ getSupportActionBar().setDisplayHomeAsUpEnabled(false);}
         setSupportActionBar(toolbar);
         carregaListView(lista);
 

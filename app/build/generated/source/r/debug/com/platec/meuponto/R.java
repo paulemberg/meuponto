@@ -2812,6 +2812,9 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f090078;
         public static final int AppTheme=0x7f090079;
         public static final int AppTheme_AppBarOverlay=0x7f09007a;
+        /** <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+<item name="android:statusBarColor">@android:color/transparent</item>
+         */
         public static final int AppTheme_NoActionBar=0x7f09002f;
         public static final int AppTheme_PopupOverlay=0x7f09007b;
         public static final int Base_AlertDialog_AppCompat=0x7f09007c;
