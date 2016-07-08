@@ -56,11 +56,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar;
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
-//        if(getSupportActionBar() != null) {
-//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//            //
-//        }
-//        else{ getSupportActionBar().setDisplayHomeAsUpEnabled(false);}
         setSupportActionBar(toolbar);
         carregaListView(lista);
 
@@ -232,13 +227,16 @@ public class MainActivity extends AppCompatActivity {
                 btnSaida.setVisibility(View.VISIBLE);
                 return;
             }
-
-            if (list.get(0).getData() != null) {
-                String data = Utils.RetornaData();
-                if (list.get(0).getData().equals(data) && list.get(0).getSaida() != null) {
+            String data = Utils.RetornaData();
+            if (list.get(0).getData() != null && !list.get(0).getData().equals(data)
+                        && list.get(0).getSaida() != null)
+                {
                     btnEntrada.setVisibility(View.VISIBLE);
-                    btnEntrada.setEnabled(false);
+                    btnEntrada.setEnabled(true);
                 }
+            else{
+                btnEntrada.setVisibility(View.VISIBLE);
+                btnEntrada.setEnabled(false);
             }
         }else
         {
