@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="b0b6d013f6013879e228cc5352d956db5136e880">
+        <dex dex="D:\Workspace\Android\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eeeaa06e537feabcef9af580cfd96a91a7d2988c\classes.dex" />
+    </item>
+
+</items>

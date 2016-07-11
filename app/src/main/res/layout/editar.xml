@@ -9,65 +9,81 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerInParent="true" >
+    android:layout_centerInParent="true"
+    android:background="@color/branco">
 
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal">
         <EditText
             android:id="@+id/txtEditdata"
             android:inputType="date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/data"
             android:enabled="false"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal">
     <EditText
         android:id="@+id/txtEditEntrada"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
-        android:hint="@string/entrada"/>
+        android:hint="@string/entrada"
+        android:maxLength="5"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal"
+        >
+
     <EditText
         android:id="@+id/txtEditAlmoco"
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
         android:hint="@string/saida_almoco"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:maxLength="5"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal">
     <EditText
         android:id="@+id/txtEditVoltaAlmoco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
-        android:hint="@string/retorno_almoco"/>
+        android:hint="@string/retorno_almoco"
+        android:maxLength="5"/>
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:gravity="center_horizontal">
     <EditText
         android:id="@+id/txtEditSaida"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="time"
-        android:hint="@string/saida"/>
+        android:hint="@string/saida"
+        android:maxLength="5"/>
     </android.support.design.widget.TextInputLayout>
 <Button
     android:id="@+id/btnSalvar"
@@ -75,6 +91,8 @@
     android:gravity="center_horizontal"
     android:layout_width="150dp"
     android:layout_height="36dp"
+    android:layout_marginLeft="100dp"
+
     />
 
 </LinearLayout>
