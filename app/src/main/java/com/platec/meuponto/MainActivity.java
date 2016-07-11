@@ -201,32 +201,42 @@ public class MainActivity extends AppCompatActivity {
         lista.setAdapter(new ListviewAdapter(this, list));
 
         if (list.size() > 0) {
+            String dt = Utils.RetornaData();
 
-            if (list.get(0).getEntrada() != null) {
+            if (list.get(0).getEntrada() != null ) {
                 btnEntrada.setVisibility(View.INVISIBLE);
             }
 
-            if (list.get(0).getSaida_almoco() != null) {
-                btnSaidaAlmoco.setVisibility(View.INVISIBLE);
-            } else {
-                btnSaidaAlmoco.setVisibility(View.VISIBLE);
-                return;
+            if(!list.get(0).getData().equals(dt))
+              {
+                  btnEntrada.setVisibility(View.VISIBLE);
+                  return;
+              }else {
+
+                if (list.get(0).getSaida_almoco() != null) {
+                    btnSaidaAlmoco.setVisibility(View.INVISIBLE);
+                } else {
+                    btnSaidaAlmoco.setVisibility(View.VISIBLE);
+                    return;
+                }
+
+
+                if (list.get(0).getRetorno_almoco() != null) {
+                    btnRetornoAlmoco.setVisibility(View.INVISIBLE);
+                } else {
+                    btnRetornoAlmoco.setVisibility(View.VISIBLE);
+                    return;
+                }
+
+
+                if (list.get(0).getSaida() != null) {
+                    btnSaida.setVisibility(View.INVISIBLE);
+                } else {
+                    btnSaida.setVisibility(View.VISIBLE);
+                    return;
+                }
             }
 
-            if (list.get(0).getRetorno_almoco() != null) {
-                btnRetornoAlmoco.setVisibility(View.INVISIBLE);
-            } else {
-                btnRetornoAlmoco.setVisibility(View.VISIBLE);
-                return;
-            }
-
-
-            if (list.get(0).getSaida() != null) {
-                btnSaida.setVisibility(View.INVISIBLE);
-            } else {
-                btnSaida.setVisibility(View.VISIBLE);
-                return;
-            }
             String data = Utils.RetornaData();
             if (list.get(0).getData() != null && !list.get(0).getData().equals(data)
                         && list.get(0).getSaida() != null)
