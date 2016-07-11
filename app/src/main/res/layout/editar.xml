@@ -77,11 +77,11 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:layout_marginLeft="100dp"-->
         <!--android:gravity="center_horizontal">-->
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="25dp"
-        android:layout_toLeftOf="@+id/btn_saida"
-        android:text="Saida"/>
+    <!--<TextView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_toLeftOf="@+id/btn_saida"-->
+        <!--android:text="Saida"/>-->
 
     <EditText
         android:id="@+id/txtEditSaida"
