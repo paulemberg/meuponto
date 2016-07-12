@@ -10,35 +10,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
-    android:background="@color/branco">
+    android:background="@color/branco"
+    android:weightSum="1">
 
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:gravity="center_horizontal">
-        <EditText
-            android:id="@+id/txtEditdata"
-            android:inputType="date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:enabled="false"/>
-    </android.support.design.widget.TextInputLayout>
+        android:gravity="center_horizontal"></android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:gravity="center_horizontal">
-    <EditText
-        android:id="@+id/txtEditEntrada"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="@string/entrada"
-        android:maxLength="5"/>
-    </android.support.design.widget.TextInputLayout>
+        android:gravity="center_horizontal"></android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="150dp"
@@ -47,14 +33,6 @@
         android:gravity="center_horizontal"
         >
 
-    <EditText
-        android:id="@+id/txtEditAlmoco"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="@string/saida_almoco"
-        android:gravity="center"
-        android:maxLength="5"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -62,13 +40,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
         android:gravity="center_horizontal">
-    <EditText
-        android:id="@+id/txtEditVoltaAlmoco"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:hint="@string/retorno_almoco"
-        android:maxLength="5"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -83,33 +54,134 @@
         <!--android:layout_toLeftOf="@+id/btn_saida"-->
         <!--android:text="Saida"/>-->
 
-    <EditText
-        android:id="@+id/txtEditSaida"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginLeft="100dp"
-        android:inputType="time"
-        android:hint="@string/saida"
-        android:maxLength="5"/>
-
     <!--</android.support.design.widget.TextInputLayout>-->
-<Button
-    android:id="@+id/btnSalvar"
-    android:text="@string/salvarAlteracao"
-    android:textSize="20sp"
-    android:textColor="@color/branco"
-    android:gravity="center"
-    android:layout_width="150dp"
-    android:layout_height="36dp"
-    android:background="@color/azul"
-    android:layout_marginLeft="100dp"
-    android:layout_marginTop="60dp"
 
-    />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="9"
+        android:rowCount="10"
+        android:layout_weight="0.52">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="DATA"
+            android:id="@+id/textView4"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginLeft="12dp" />
 
+        <EditText
+            android:id="@+id/txtEditdata"
+            android:inputType="date"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Entrada:"
+            android:id="@+id/textView3"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginLeft="12dp" />
+
+        <EditText
+            android:id="@+id/txtEditAlmoco"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="@string/saida_almoco"
+            android:maxLength="5"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Retorno:"
+            android:id="@+id/textView"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginLeft="12dp" />
+
+        <EditText
+            android:id="@+id/txtEditVoltaAlmoco"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="@string/retorno_almoco"
+            android:maxLength="5"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Saida:"
+            android:id="@+id/textView1"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginLeft="12dp" />
+
+        <EditText
+            android:id="@+id/txtEditEntrada"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="@string/entrada"
+            android:maxLength="5"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Almoço:"
+            android:id="@+id/textView2"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginLeft="12dp" />
+
+        <EditText
+            android:id="@+id/txtEditSaida"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:hint="@string/saida"
+            android:maxLength="5"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+        android:id="@+id/btnSalvar"
+        android:text="@string/salvarAlteracao"
+        android:textSize="20sp"
+        android:textColor="@color/branco"
+        android:gravity="center"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:background="@color/azul"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_row="8"
+            android:layout_column="4" />
+
+    </GridLayout>
 
 
 </LinearLayout>

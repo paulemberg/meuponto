@@ -4,10 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
-import android.widget.Switch;
 
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -129,7 +126,7 @@ public class BD {
         return (list);
     }
 
-    public MarcaHora EditarRegistro(String id)
+    public MarcaHora BuscarRegistro(String id)
     {
         MarcaHora marcacao = new MarcaHora();
 
@@ -150,5 +147,16 @@ public class BD {
             cursor.close();
         }
         return (marcacao);
+    }
+
+    public void AlterarRegistro(MarcaHora marcaHora)
+    {
+        ContentValues values = new ContentValues();
+
+        values.put("entrada", marcaHora.getEntrada());
+        values.put("saida_almoco", marcaHora.getSaida_almoco());
+        values.put("retorno_almoco", marcaHora.getRetorno_almoco());
+        values.put("saida", marcaHora.getSaida());
+        db.update("horarios_tb", values, "_id=" + marcaHora.get_id(), null);
     }
 }
