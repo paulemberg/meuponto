@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 registroExiste = bd.ValidaPrimeiroRegistro(mhora);
 
                 //for test add a new register without compare date uncoment line down;
-                //registroExiste = false;
+                registroExiste = false;
 
                 if (!registroExiste) {
                     //bd.insereHora(mhora);
@@ -200,7 +200,8 @@ public class MainActivity extends AppCompatActivity {
         List<MarcaHora> list = bd.buscar();
         lista.setAdapter(new ListviewAdapter(this, list));
 
-        if (list.size() > 0) {
+        if (list.size() > 0)
+        {
             String dt = Utils.RetornaData();
 
             if (list.get(0).getEntrada() != null ) {
@@ -246,12 +247,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             else{
                 btnEntrada.setVisibility(View.VISIBLE);
-                btnEntrada.setEnabled(false);
+                btnEntrada.setEnabled(true);
             }
         }else
         {
             btnEntrada.setVisibility(View.VISIBLE);
         }
+
 
     }
 

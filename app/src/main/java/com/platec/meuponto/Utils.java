@@ -23,8 +23,16 @@ public class Utils {
 
     public static String RetornaData() {
         Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+        SimpleDateFormat df = new SimpleDateFormat("ddMMMyyyy");
         String dataFormatada = df.format(c.getTime());
+        return dataFormatada;
+    }
+
+    public static String FormataDataParaLista(String data){
+
+        String dia = data.substring(0,2);
+        String mes = data.substring(2,5);
+        String dataFormatada = mes + "\n" +dia ;
         return dataFormatada;
     }
 

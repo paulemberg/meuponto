@@ -48,10 +48,12 @@ public class ListviewAdapter extends BaseAdapter {
         // na View
         LayoutInflater inflater = (LayoutInflater)
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.itemlistview, null);
+//        View view = inflater.inflate(R.layout.itemlistview, null);
+        View view = inflater.inflate(R.layout.newitemlistview, null);
+        TextView txtdata = (TextView) view.findViewById(R.id.data);
 
-        TextView txtdata = (TextView) view.findViewById(R.id.txtdata);
-        txtdata.setText(marcaHora.getData());
+        String dt = Utils.FormataDataParaLista(marcaHora.getData().toString());
+        txtdata.setText(dt);
 
         TextView txtid = (TextView) view.findViewById(R.id.txtid);
         txtid.setText(marcaHora.get_id());
@@ -70,23 +72,24 @@ public class ListviewAdapter extends BaseAdapter {
         txthoraSaida.setText(marcaHora.getSaida());
 
 
-        ImageView imgBarra = (ImageView) view.findViewById(R.id.imgBarra);
-        int ultimaCor;
-        if (marcaHora.getEntrada() != null && marcaHora.getSaida_almoco() != null
-                && marcaHora.getRetorno_almoco() != null && marcaHora.getSaida() != null) {
-            int cor;
-            cor = retornaCor();
-            ultimaCor = cor;
-            if(cor != ultimaCor)
-            {
-                imgBarra.setBackgroundColor(cor);
-            }else
-            {
-                cor = retornaCor();
-                imgBarra.setBackgroundColor(cor);
-            }
-            ultimaCor = cor;
-        }
+//        ImageView imgBarra = (ImageView) view.findViewById(R.id.imgBarra);
+//        int ultimaCor;
+//        if (marcaHora.getEntrada() != null && marcaHora.getSaida_almoco() != null
+//                && marcaHora.getRetorno_almoco() != null && marcaHora.getSaida() != null)
+//        {
+//            int cor;
+//            cor = retornaCor();
+//            ultimaCor = cor;
+//            if(cor != ultimaCor)
+//            {
+//                imgBarra.setBackgroundColor(cor);
+//            }else
+//            {
+//                cor = retornaCor();
+//                imgBarra.setBackgroundColor(cor);
+//            }
+//            ultimaCor = cor;
+//        }
         return view;
     }
 

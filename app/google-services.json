@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "316329619770",
+    "project_id": "pandpmeuponto"
+  },
+  "client": [
+    {"client_id": "android:com.platec.meuponto",
+      "client_info": {
+		
+        "mobilesdk_app_id": "1:316329619770:android:65193d3312447dc8",
+        "android_client_info": {
+			
+          "package_name": "com.platec.meuponto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5uaJFMnPE-pNQpKCdgqXXOuRYlPGHR14"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-80353495-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
