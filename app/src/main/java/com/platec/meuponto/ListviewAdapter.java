@@ -71,25 +71,6 @@ public class ListviewAdapter extends BaseAdapter {
         TextView txthoraSaida = (TextView) view.findViewById(R.id.txtHoraSaida);
         txthoraSaida.setText(marcaHora.getSaida());
 
-
-//        ImageView imgBarra = (ImageView) view.findViewById(R.id.imgBarra);
-//        int ultimaCor;
-//        if (marcaHora.getEntrada() != null && marcaHora.getSaida_almoco() != null
-//                && marcaHora.getRetorno_almoco() != null && marcaHora.getSaida() != null)
-//        {
-//            int cor;
-//            cor = retornaCor();
-//            ultimaCor = cor;
-//            if(cor != ultimaCor)
-//            {
-//                imgBarra.setBackgroundColor(cor);
-//            }else
-//            {
-//                cor = retornaCor();
-//                imgBarra.setBackgroundColor(cor);
-//            }
-//            ultimaCor = cor;
-//        }
         return view;
     }
 
@@ -102,10 +83,7 @@ public class ListviewAdapter extends BaseAdapter {
         return colors[new Random().nextInt(totalColors)];
 
 
-//        String[] colors = context.getResources().getStringArray(R.array.rainbow);
-//        int totalColors = colors.length;
-//        String randomStr = array[new Random().nextInt(array.length)];
-//        return Color.parseColor(randomStr);
+
     }
 
 }

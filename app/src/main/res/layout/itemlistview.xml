@@ -6,132 +6,28 @@
     android:padding="5dp"
     android:background="@drawable/list_selector">
 
-    <ImageView
-        android:id="@+id/imgBarra"
-        android:layout_width="5dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorAccent"
-        android:scaleType="centerCrop"
-        />
-
     <TextView
-        android:id="@+id/txtdata"
+        android:id="@+id/Editdata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHoraEntrada"
-        android:layout_toRightOf="@+id/imgBarra"
-        android:layout_marginLeft="16dp"
-        android:textSize="15sp"
-        android:textColor="@color/cinza_escuro"
-        android:paddingLeft="5dp"
-        />
+        android:text="Data"/>
+
+
+    <EditText
+        android:id="@+id/txtEditEntrada"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/data"
+        android:layout_height="140dp"
+        android:textSize="100sp"
+        android:text="9:00"/>        
     <TextView
-        android:id="@+id/txtid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHoraEntrada"
-        android:layout_toRightOf="@+id/txtdata"
-        android:layout_marginLeft="16dp"
-        android:textSize="20sp"
-        android:textColor="@color/cinza_escuro"
-        android:visibility="invisible"
-        android:paddingLeft="5dp"
+        android:id="@+id/txtPonto"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/txtEditEntrada"
+        android:text="Entrada"
         />
 
-        <TextView
-           android:id="@+id/txtEntrada"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/imgBarra"
-            android:layout_alignTop="@+id/imgBarra"
-            android:layout_marginLeft="15dp"
-            android:text="@string/entrada"
-            android:textSize="15sp"
-            android:textColor="@color/cinza_escuro"
-            android:paddingLeft="5dp"
-            />
 
-    <TextView
-        android:id="@+id/txtHoraEntrada"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:textColor="#333333"
-        android:paddingLeft="5dp"
-        android:layout_gravity="top"
-        android:layout_below="@+id/txtEntrada"
-        android:layout_alignLeft="@+id/txtdata"
-        android:layout_alignStart="@+id/txtdata"
-        android:textSize="20sp"/>
-
-    <TextView
-        android:id="@+id/txtAlmoco"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/txtEntrada"
-        android:layout_alignTop="@+id/txtEntrada"
-        android:layout_marginLeft="15dp"
-        android:textSize="15sp"
-        android:textColor="@color/cinza_escuro"
-        android:text="@string/saida_almoco"
-        />
-
-     <TextView
-        android:id="@+id/txtHoraAlmoco"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:textColor="#333333"
-        android:layout_gravity="top"
-        android:textSize="20sp"
-        android:layout_below="@+id/txtAlmoco"
-        android:layout_toLeftOf="@+id/txtVoltaAlmoco"
-        android:layout_toStartOf="@+id/txtVoltaAlmoco" />
-
-    <TextView
-        android:id="@+id/txtVoltaAlmoco"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/txtAlmoco"
-        android:layout_alignTop="@+id/txtAlmoco"
-        android:layout_marginLeft="15dp"
-        android:textSize="15sp"
-        android:textColor="@color/cinza_escuro"
-        android:text="@string/retorno_almoco"
-        />
-    <TextView
-        android:id="@+id/txtHoraVoltaAlmoco"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:textColor="#333333"
-        android:paddingLeft="5dp"
-        android:layout_gravity="top"
-        android:textSize="20sp"
-        android:layout_alignTop="@+id/txtHoraSaida"
-        android:layout_toLeftOf="@+id/txtSaida"
-        android:layout_toStartOf="@+id/txtSaida" />
-
-    <TextView
-        android:id="@+id/txtSaida"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/txtVoltaAlmoco"
-        android:layout_alignTop="@+id/txtVoltaAlmoco"
-        android:layout_marginLeft="15dp"
-        android:textSize="15sp"
-        android:textColor="@color/cinza_escuro"
-        android:text="@string/saida"
-        />
-
-    <TextView
-        android:id="@+id/txtHoraSaida"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:textColor="#333333"
-        android:paddingLeft="5dp"
-        android:layout_gravity="top"
-        android:layout_below="@+id/txtSaida"
-        android:layout_alignLeft="@+id/txtSaida"
-        android:layout_alignStart="@+id/txtSaida"
-        android:textSize="20sp"/>
 
 </RelativeLayout>
