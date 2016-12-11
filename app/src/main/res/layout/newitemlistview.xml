@@ -126,10 +126,10 @@
         android:layout_alignStart="@+id/txtSaida"
         android:textSize="20sp"/>
 
-        <TextView
+ <!--       <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:text="teste"
-            />
+            />-->
 </RelativeLayout>

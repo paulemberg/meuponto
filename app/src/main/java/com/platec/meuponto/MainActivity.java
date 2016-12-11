@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 registroExiste = bd.ValidaPrimeiroRegistro(mhora);
 
                 //for test add a new register without compare date uncoment line down;
-                registroExiste = false;
+                //registroExiste = false;
 
                 if (!registroExiste) {
                     //bd.insereHora(mhora);
@@ -155,12 +155,12 @@ public class MainActivity extends AppCompatActivity {
         lista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView id_ = (TextView) view.findViewById(R.id.txtid);
+               /* TextView id_ = (TextView) view.findViewById(R.id.txtid);
                 Bundle bundle = new Bundle();
                 bundle.putString("id", id_.getText().toString());
                 Intent intent = new Intent(MainActivity.this, EditarActivity.class);
                 intent.putExtras(bundle);
-                startActivity(intent);
+                startActivity(intent);*/
 
                 return false;
             }
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 startActivity(getIntent());
                 return true;
-           /* case R.id.help:
+          /* case R.id.help:
                 showHelp();
                 return true;*/
             default:
