@@ -2,109 +2,157 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.0_08af65ef60ba5b62e99bccc7fd04113d890b4dd4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0_2218976d10c43c07febea100e5b0717988a772ae.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1821601ddbec5ff125653097812823388700af74">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.android.support-design-22.2.1_175f83aadaec89fb311191f1e838eb54b5691b87.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.0.0_34f193c1dffa458aa51bf0203273f23f50272a7d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.0.0_8794ead9a8158d94ee8cd21933d6152e82dc1a1f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.0.0_3deab85be6dab87c831263be25d0eecee6375376.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.0.0_8c18026131226572f98ed08c140f29e722d59962.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.0.0_508145aa415e86b5b4589b376cf6e125c25b87c5.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.0.0_6008fa7077c4f675591fd904ff829360e51ddd64.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_8cc89127eef0d7195fac18932ee7155b1aadce2d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0_0c20fb795826f05e569e8d8776707241d5a6a29f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-9.0.0_b10abb1119c926031ede79b013b3b6b259f30a8c.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.0.0_a708f3c027eb34c7c03d0e3128de3f40733c4fac.jar" />
-    </item>
-    <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
         revision="22.0.1"
         sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.0.0_ba6c0d7c4b7de43c286283a538ea3a3e859969cf.jar" />
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.0_bf3af49a43b7b7366e95784ecdc904440a1db4e8\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.0.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="2cb29455028e92e024bbad0d41c6ec772f2433d1">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.0.0_464793d86a0bb81e4d0087ae2c8aba611687deba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4431efe5d0f67fab36a698dde725946b33a6bf4a">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.0.0_2c2593523ad33149ef2fbfbdc4059651bffe4214\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.0_79ed278594c104ad329cb26790c3d0b9b9eb9992\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.0_3d2b27a2b0df415da609a6e9f10b2c1878298de2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
         revision="22.0.1"
         sha1="79e4b41db41d4dbbf364c7bd6aaeee5b876c9d8b">
-        <dex dex="C:\Users\Paulemberg\Desktop\repo\meuponto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-9.0.0_e926272f53e2d63183d7eee666410e186a81c1d2.jar" />
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.0.0_b22a15fa6f9f1f6aed87688a5bb2929c249a1b41\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.0_fcaabe017bfd1c49c2d1e9d8b03616a1845cf2e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="c7488dfff3d6f6a71142b47aafb284aaa1c68306">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_52a4d6cc33f3af80a6e640d157f30701b864486c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_73ada1fb7a0102718020fc8690c58c5ae781a854\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.1_5033ddf329d59015aa90b229b2ff33d3d607b5f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.0_7b04e20b14e7a3db31edbb26e38765e56753d307\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.0_1ec0ad9fca87280e908d30eb0cd2cf5b40c9fbca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.0_dce1eaf4c4f57dd9a09a49233adadcb785a3cf2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.0_7a09419b4c62509c88706ed2151d30e6c6d00fba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.0_c856bf06695c63fd26dc78f6938b4771aa81fecf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="4f9b5e73d346555e5c397eb53b1f0d7170536764">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_eafa33d7e5549bb1c18d04e2be72301f2e3c3d53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="C:\Users\Ana Loretta\Desktop\meuponto\meuponto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-22.2.1_5f481d0e06b60287f3e6db99f71ecb7b97b5fb66\classes.dex" />
     </item>
 
 </items>
