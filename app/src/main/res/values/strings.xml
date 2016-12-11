@@ -20,7 +20,7 @@
     <string name="registro_inexistente">Não existe registro de entrada</string>
 
     <!--producao-->
-    <!--<string name="banner_ad_unit_id">ca-app-pub-6452310333165626/7705029597</string>-->
+    <string name="banner_ad_unit_id">ca-app-pub-6452310333165626/7705029597</string>
     <!--Debug-->
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
 </resources>
